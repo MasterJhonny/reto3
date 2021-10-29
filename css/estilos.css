@@ -1,0 +1,147 @@
+:root {
+    --colorPrymary:#8f4068;
+    --colorPrymary1:#eff0b6;
+    --colorFondo:#f8a1d1;
+    --colorFondo1:#ebd8b7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: monospace;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:var(--colorPrymary);
+    height: 12vh;
+    color:var(--colorPrymary1);
+}
+.desaperece {
+    display: none;
+}
+.navegacion ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    list-style: none;
+    width: 100%;
+}
+
+.navegacion a {
+    text-decoration: none;
+    margin: 1rem;
+    color: var(--colorPrymary1);
+    font-size: 1.9rem;
+}
+
+.btn {
+    border: 0;
+    border-radius: .4rem;
+    margin: .5rem;
+    color: var(--colorPrymary1);
+    background-color:var(--colorPrymary);
+    padding: .4rem;
+}
+
+.menu {
+    border: 0;
+    border-radius: .4rem;
+    margin: .5rem;
+    color: var(--colorPrymary1);
+    background-color: transparent;
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+main {
+    height: 88vh;
+    background-color:var(--colorFondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main a {
+    font-size:2rem;
+    transition: all .15s linear;
+}
+h2 {
+    font-size: 2rem;
+}
+
+.main {
+    background-color: var(--colorPrymary); 
+    padding: 2rem;
+}
+
+.model {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width: 90%;
+    height: 10rem;
+    position: absolute;
+    top: 200px;
+    background-color: var(--colorFondo1);
+}
+
+.modal {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top:-1000px;
+    background-color: var(--colorFondo1);
+}
+
+.modal-header {
+    background-color: #812056;
+    height: 8vh;
+    font-size: 1.4rem;
+}
+.modal-header a {
+    color: var(--colorPrymary1);
+    margin: 1rem;
+}
+.modal p {
+    height:auto;
+    background-color: var(--colorFondo);
+    border-radius:1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.modal .day {
+    width:50%;
+    display: flex;
+    justify-content:space-between;
+    margin: .5rem;
+}
+
+.borrar {
+    display: none;
+}
+section {
+    padding: 2rem;
+}
+.item {
+    display: flex;
+    flex-direction:column;
+    margin: 2rem;
+}
+span {
+    font-size:1.4rem;
+}
+
+.tabla, .resul {
+    margin: 0px;
+    padding:0px;
+}

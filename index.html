@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyects | Cofiguracion</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <picture>
+                <img src="" alt="">
+            </picture>
+            <h1>Proyects</h1>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <button class="menu iten" id="menu" onclick="abrirMenu()"><i class="fas fa-bars"></i></button>
+                <button class="btn iten desaperece" id="x" onclick="cerrarMenu()"><i class="fas fa-times"></i></button>
+                <li><a href="http://127.0.0.1:5500/index.html" class="iten desaperece">Inicio</a></li>
+                <li><a href="#modal" class="iten desaperece">Crear Nuevo Proyect</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <aside class="model" id="model">
+            <h2>Bienbenidos a Proyect</h2>
+            <button class="btn" id="iniciar">Crear Nuevo Proyect</button>
+            <aside id="modal" class="modal">
+                <header class="modal-header">
+                    <h3>Cofiguracion del Proyect</h3>
+                    <a href="http://127.0.0.1:5500/index.html">x</a>
+                </header>
+                <section class="section">
+                <h3>Introdusca los datos</h3>
+                <form action="">
+                    <hr color="#290149" size=".5">
+                    <label for="diasFeriados" class="item">
+                        <span>Elije los días feriados</span>
+                        <input type="date" name="cantidadDias" id="diasFeriados">
+                        <div class="botones">
+                            <button class="btn" type="button" id="elegirFeriados">Agregar</button>
+                            <button class="btn borrar" id="borrar" type="button">borrar Ultimo dia</button>
+                        </div>
+                        <p id="feriados"></p>
+                    </label>
+                    <hr color="#290149" size=".5">
+                    <label for="elegirDias" class="item">
+                        <span>Elegir días <strong>no</strong> habiles</span>
+                        <label for="elegirDias" class="day">
+                            <span>Lunes</span>
+                            <input type="checkbox" id="0" value="lunes">
+                        </label>
+                        <label for="elegirDias" class="day">
+                            <span>Martes</span>
+                            <input type="checkbox" id="1" value="martes">
+                        </label>
+                        <label for="elegirDias" class="day">
+                            <span>Miercoles</span>
+                            <input type="checkbox" id="2" value="miercoles">
+                        </label>
+                        <label for="elegirDias" class="day">
+                            <span>Jueves</span>
+                            <input type="checkbox" id="3" value="jueves">
+                        </label>
+                        <label for="elegirDias" class="day">
+                            <span>Viernes</span>
+                            <input type="checkbox" id="4" value="viernes">
+                        </label>
+                        <label for="elegirDias" class="day">
+                            <span>Sabado</span>
+                            <input type="checkbox" id="5" value="sabado">
+                        </label>
+                        <label for="elegirDias" class="day">
+                            <span>Domingo</span>
+                            <input type="checkbox" id="6" value="domingo">
+                        </label>
+                    </label>
+                    <hr color="#290149" size=".5">
+                    <label for="cantidadActiovidades" class="item">
+                        <span>Cantidad de Actividades</span>
+                        <input type="number" name="cantidadActiovidades" id="cantidadActiovidades">
+                    </label>
+                    <hr color="#290149" size=".5">
+                    <label for="fechaInicioPro" class="item">
+                        <span>Fecha de inicion del Proyecto</span>
+                        <input type="date" name="fechaInicioPro" id="fechaInicioPro">
+                    </label>
+                    <hr color="#290149" size=".5">
+                </form>
+                <div class="boton">
+                    <button class="btn" id="cargar" type="button">Cargar Datos</button>
+                </div>
+            </section>
+        </aside>
+        </aside>
+        <section class="tabla">
+            <div class="parte">
+            </div>
+        </section>
+        <section class="resul"></section>
+    </main>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

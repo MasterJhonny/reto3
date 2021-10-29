@@ -1,0 +1,63 @@
+:root {
+    --colorPrymary:#8f4068;
+    --colorPrymary1:#eff0b6;
+    --colorFondo:#f8a1d1;
+    --colorFondo1:#ebd8b7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: monospace;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:var(--colorPrymary);
+    height: 12vh;
+    color:var(--colorPrymary1);
+}
+.desaperece {
+    display: none;
+}
+.navegacion ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    list-style: none;
+    width: 100%;
+}
+
+.navegacion a {
+    text-decoration: none;
+    margin: 1rem;
+    color: var(--colorPrymary1);
+    font-size: 1.9rem;
+}
+
+.btn {
+    border: 0;
+    border-radius: .4rem;
+    margin: .5rem;
+    color: var(--colorPrymary1);
+    background-color:var(--colorPrymary);
+    padding: .4rem;
+}
+
+.menu {
+    border: 0;
+    border-radius: .4rem;
+    margin: .5rem;
+    color: var(--colorPrymary1);
+    background-color: transparent;
+    margin: 1rem;
+    font-size: 3rem;
+}
